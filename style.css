@@ -5,6 +5,13 @@ h1 {
 }
 
 body {
-  font-family: monospace;
   font-size: 69px;
+  background: #dea5a4
+}
+
+.sassy{
+  font-family: monospace;
+  color: white;
+  text-decoration: none;
+
 }
