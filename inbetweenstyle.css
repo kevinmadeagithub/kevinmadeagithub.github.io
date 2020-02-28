@@ -1,0 +1,23 @@
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white ;
+  background-color: #dea5a4 ;
+}
+
+p {
+  font-family: "Helvetica";
+  font-style: oblique;
+  font-size: 3vw;
+  color:white;
+  position: fixed;
+  top: 35%;
+  left: 45%;
+}
+
+body {
+  background: #dea5a4
+}
