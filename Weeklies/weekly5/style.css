@@ -1,0 +1,31 @@
+.light_gray {
+  font-family: "Helvetica";
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 4vw;
+  position: fixed;
+  top: 35%;
+  left: 20%;
+  color: #b3b3b3;
+}
+
+.dark_gray {
+  font-family: "Helvetica";
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 4vw;
+  position: fixed;
+  top: 35%;
+  left: 22%;
+  color: #808080;
+}
+
+.black {
+  font-family: "Helvetica";
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 4vw;
+  position: fixed;
+  top: 35%;
+  left: 25%;
+}
