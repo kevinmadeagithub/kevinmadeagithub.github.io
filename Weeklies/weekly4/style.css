@@ -1,0 +1,35 @@
+.body {
+  position: fixed;
+  top: 15%;
+  left: 30%;
+}
+
+.head {
+  position: fixed;
+  top: 10%;
+  left: 36%;
+}
+
+.left_hand {
+  position: fixed;
+  top: 22%;
+  left: 23%;
+}
+
+.right_hand {
+  position: fixed;
+  top: 22%;
+  left: 48%;
+}
+
+.left_foot {
+  position: fixed;
+  top: 52%;
+  left: 26%;
+}
+
+.right_foot {
+  position: fixed;
+  top: 52%;
+  left: 45%;
+}
