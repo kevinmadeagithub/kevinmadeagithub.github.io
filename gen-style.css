@@ -1,0 +1,35 @@
+body {
+  font-size: 3vw;
+  color:white;
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  background: #dea5a4;
+}
+.links {
+  font-family: "Helvetica";
+  font-style: oblique;
+  font-weight: bold;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dea5a4 ;
+  background-color: white ;
+}
+
+.nav {
+  font-family: monospace;
+  text-decoration: none;
+  text-align: right;
+  line-height: 1.5;
+  font-size: 1.25vw;
+  color:#967bb6;
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  width: 100%;
+}
