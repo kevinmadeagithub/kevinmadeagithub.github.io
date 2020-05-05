@@ -72,3 +72,5 @@ cutscene [2] = {
   choice2result : 3,
   videoTime: 60
 }
+
+})
