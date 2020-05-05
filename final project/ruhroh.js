@@ -47,7 +47,7 @@ $(document).ready(function(){
       }
     }, cutscene[cutsceneIndex].videoTime*1000);
   }
-}};
+});
 
 var cutsceneIndex = 1;
 var cutscene = [];
