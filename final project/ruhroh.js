@@ -8,15 +8,14 @@ $(document).ready(function(){
   choice3.hide();
 
   choice1.click(function() {
-      if(cutscene[cutsceneIndex].choice1Text){
+      if(cutscene[cutsceneIndex].choice1Flavor){
         choice2.hide();
         choice3.hide();
-        choice1.html("<h1>"+cutscene[cutsceneIndex].choice1Text+"</h1>");
-
+        choice1.html("<h1><span>"+cutscene[cutsceneIndex].choice1Flavor+"</span></h1>");
         setTimeout(function () {
           cutsceneIndex = cutscene[cutsceneIndex].choice1result;
           loadcutscene();
-        }, cutscene[cutsceneIndex].choiceTextTime * 1000);
+        }, cutscene[cutsceneIndex].choiceFlavorTime * 1000);
       } else {
         cutsceneIndex = cutscene[cutsceneIndex].choice1result;
         loadcutscene();
@@ -24,13 +23,33 @@ $(document).ready(function(){
   });
 
   choice2.click(function() {
-      cutsceneIndex = cutscene[cutsceneIndex].choice2result;
-      loadcutscene();
+    if(cutscene[cutsceneIndex].choice2Flavor){
+      choice1.hide();
+      choice3.hide();
+      choice2.html("<h1><span>"+cutscene[cutsceneIndex].choice2Flavor+"</span></h1>");
+      setTimeout(function () {
+        cutsceneIndex = cutscene[cutsceneIndex].choice2result;
+        loadcutscene();
+      }, cutscene[cutsceneIndex].choiceFlavorTime * 1000);
+    } else {
+        cutsceneIndex = cutscene[cutsceneIndex].choice2result;
+        loadcutscene();
+    }
   });
 
   choice3.click(function() {
+    if(cutscene[cutsceneIndex].choice3Flavor){
+      choice1.hide();
+      choice2.hide();
+      choice3.html("<h1><span>"+cutscene[cutsceneIndex].choice3Flavor+"</span></h1>");
+      setTimeout(function () {
+        cutsceneIndex = cutscene[cutsceneIndex].choice3result;
+        loadcutscene();
+      }, cutscene[cutsceneIndex].choiceFlavorTime * 1000);
+  } else {
       cutsceneIndex = cutscene[cutsceneIndex].choice3result;
       loadcutscene();
+    }
   });
 
   loadcutscene();
@@ -70,8 +89,8 @@ cutscene [1] = {
   vid : "assets/1.mp4",
   choice1 : "eat the shrooms",
   choice2 : "don't??",
-  choice1Text: "dont go down the hole",
-  choiceTextTime: 2,
+  choice2Flavor: ">> error: drugs r inevitable",
+  choiceFlavorTime: 2,
   choice1result : 2,
   choice2result : 2,
   videoTime: 21
