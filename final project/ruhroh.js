@@ -90,7 +90,7 @@ cutscene [1] = {
   choice1 : "eat the shrooms",
   choice2 : "don't??",
   choice2Flavor: ">> error: drugs r inevitable",
-  choiceFlavorTime: 2,
+  choiceFlavorTime: 2.5,
   choice1result : 2,
   choice2result : 2,
   videoTime: 21
