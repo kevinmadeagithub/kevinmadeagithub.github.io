@@ -1,15 +1,26 @@
 $(document).ready(function(){
   var video = document.getElementById('vid')
-  var choice1 = $("choice1");
-  var choice2 = $("choice2");
-  var choice3 = $("choice3");
+  var choice1 = $("#choice1");
+  var choice2 = $("#choice2");
+  var choice3 = $("#choice3");
   choice1.hide();
   choice2.hide();
   choice3.hide();
 
   choice1.click(function() {
-      cutsceneIndex = cutscene[cutsceneIndex].choice1result;
-      loadcutscene();
+      if(cutscene[cutsceneIndex].choice1Text){
+        choice2.hide();
+        choice3.hide();
+        choice1.html("<h1>"+cutscene[cutsceneIndex].choice1Text+"</h1>");
+
+        setTimeout(function () {
+          cutsceneIndex = cutscene[cutsceneIndex].choice1result;
+          loadcutscene();
+        }, cutscene[cutsceneIndex].choiceTextTime * 1000);
+      } else {
+        cutsceneIndex = cutscene[cutsceneIndex].choice1result;
+        loadcutscene();
+      }
   });
 
   choice2.click(function() {
@@ -35,15 +46,15 @@ $(document).ready(function(){
     setTimeout(function () {
       if (cutscene[cutsceneIndex].choice1) {
         choice1.show();
-        choice1.html("<h1>"+cutscene[cutsceneIndex].choice1+"</h1");
+        choice1.html("<div><h1>"+cutscene[cutsceneIndex].choice1+"</h1></div>");
       }
       if (cutscene[cutsceneIndex].choice2) {
         choice2.show();
-        choice2.html("<h1>"+cutscene[cutsceneIndex].choice2+"</h1");
+        choice2.html("<div><h1>"+cutscene[cutsceneIndex].choice2+"</h1></div>");
       }
       if (cutscene[cutsceneIndex].choice3) {
         choice3.show();
-        choice1.html("<h1>"+cutscene[cutsceneIndex].choice3+"</h1");
+        choice1.html("<div><h1>"+cutscene[cutsceneIndex].choice3+"</h1></div>");
       }
     }, cutscene[cutsceneIndex].videoTime*1000);
   }
@@ -56,21 +67,21 @@ cutscene [0] = {
 }
 
 cutscene [1] = {
-  vid : "1.mp4",
+  vid : "assets/1.mp4",
   choice1 : "eat the shrooms",
   choice2 : "don't??",
+  choice1Text: "dont go down the hole",
+  choiceTextTime: 2,
   choice1result : 2,
   choice2result : 2,
   videoTime: 21
 }
 
 cutscene [2] = {
-  vid : "2.mp4",
+  vid : "assets/2.mp4",
   choice1 : "was that door always there?",
   choice2 : "ooh, door",
   choice1result : 3,
   choice2result : 3,
   videoTime: 60
 }
-
-})
