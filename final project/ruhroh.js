@@ -104,3 +104,85 @@ cutscene [2] = {
   choice2result : 3,
   videoTime: 60
 }
+
+cutscene [3] = {
+  vid : "assets/3.mp4",
+  choice1 : "im dead",
+  choice1Flavor : ">> uhh wait just give it a sec",
+  choiceFlavorTime : 2.5,
+  choice1result : 4,
+  videoTime: 33
+}
+
+cutscene [4] = {
+  vid : "assets/4.mp4",
+  choice1 : "am i in heaven?",
+  choice2 : "are you god?",
+  choice1result : 5,
+  choice2result : 6,
+  videoTime: 25
+}
+
+cutscene [5] = {
+  vid : "assets/5.mp4",
+  choice1 : "sorry. how are you talking?",
+  choice2 : "so...you're not god?",
+  choice1result : 7,
+  choice2result : 6,
+  videoTime: 8
+}
+
+cutscene [6] = {
+  vid : "assets/6.mp4",
+  choice1 : "then, uh, how are you talking?",
+  choice2 : "i know what a dog is",
+  choice1result : 7,
+  choice2result : 8,
+  videoTime: 7
+}
+
+cutscene [7] = {
+  vid : "assets/7.mp4",
+  choice1 : "i know what a dog is",
+  choice2 : "i KNOW what a dog is",
+  choice1result : 8,
+  choice2result : 8,
+  videoTime: 9
+}
+
+cutscene [8] = {
+  vid : "assets/8.mp4",
+  choice1 : "yes!! you are a dog",
+  choice1result : 9,
+  videoTime: 7
+}
+
+cutscene [9] = {
+  vid : "assets/9.mp4",
+  choice1 : "you seem, irritated.",
+  choice2 : "are you, really a dog?",
+  choice1result : 10,
+  choice2result : 11,
+  videoTime: 7
+}
+
+cutscene [10] = {
+  vid : "assets/10.mp4",
+  choice1 : "are you, uh, really a dog?",
+  choice1result : 11,
+  videoTime: 14
+}
+
+cutscene [11] = {
+  vid : "assets/11.mp4",
+  choice1 : "...i think its time to wake up",
+  choice1result : 12,
+  videoTime: 28
+}
+
+cutscene [12] = {
+  vid : "assets/12.mp4",
+  choice1 : "uhh i guess start over",
+  choice1result : 1,
+  videoTime: 5
+}
